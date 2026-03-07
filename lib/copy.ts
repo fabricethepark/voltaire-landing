@@ -11,10 +11,8 @@ export const copy = {
   },
   hero: {
     eyebrow: "THE FIRST POST-HUMAN COMPANY",
-    headline: "The org chart is dead.",
-    tagline: "Zero employees. Infinite scale.",
-    sub: "Six agents run Voltaire. One human makes decisions 20 minutes a day. This is what a company looks like when AI handles operations.",
-    closing: "Six AI agents run Voltaire. Hiring more.",
+    headline: "Zero employees. Infinite scale.",
+    sub: "Six AI agents run Voltaire. Hiring more.",
     ctaPrimary: { label: "See how it works", href: "/os" },
   },
   stats: {
