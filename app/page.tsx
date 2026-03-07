@@ -73,12 +73,14 @@ export default function Home() {
               {copy.hero.headline.map((line, li) => (
                 <span key={li} style={{ display: "block" }}>
                   {line.split(" ").map((word, i) => (
-                    <span
-                      key={i}
-                      className="word-reveal"
-                      style={{ animationDelay: `${(li * 3 + i) * 120 + 100}ms` }}
-                    >
-                      {word}{" "}
+                    <span key={i}>
+                      <span
+                        className="word-reveal"
+                        style={{ animationDelay: `${(li * 3 + i) * 120 + 100}ms` }}
+                      >
+                        {word}
+                      </span>
+                      {" "}
                     </span>
                   ))}
                 </span>
