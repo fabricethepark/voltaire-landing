@@ -79,9 +79,9 @@ export default function Nav() {
                 className="transition-colors duration-200"
                 style={{
                   fontFamily: "var(--font-mono)",
-                  fontSize: "0.72rem",
+                  fontSize: "0.88rem",
                   textTransform: "uppercase",
-                  letterSpacing: "0.15em",
+                  letterSpacing: "0.12em",
                   color: "var(--color-text-secondary)",
                   textDecoration: "none",
                 }}

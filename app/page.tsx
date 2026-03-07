@@ -48,7 +48,10 @@ export default function Home() {
       <Nav />
 
       {/* ── HERO ── */}
-      <section className="relative flex flex-col items-center justify-center text-center px-6 min-h-screen">
+      <section
+        className="relative flex flex-col items-center justify-center text-center px-6"
+        style={{ paddingTop: "clamp(120px, 18vw, 200px)", paddingBottom: "clamp(80px, 12vw, 140px)" }}
+      >
         {/* Radial glow */}
         <div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
@@ -62,11 +65,11 @@ export default function Home() {
 
         <div className="relative z-10 max-w-3xl">
           <FadeIn>
-            <p className="eyebrow mb-6">{copy.hero.eyebrow}</p>
+            <p className="eyebrow mb-5">{copy.hero.eyebrow}</p>
           </FadeIn>
 
           <FadeIn delay={100}>
-            <h1 className="hero-headline gold-glow mb-8">
+            <h1 className="hero-headline gold-glow mb-4">
               {copy.hero.headline.split(" ").map((word, i) => (
                 <span
                   key={i}
@@ -79,11 +82,42 @@ export default function Home() {
             </h1>
           </FadeIn>
 
-          <FadeIn delay={200}>
-            <p className="hero-sub mx-auto mb-10">{copy.hero.sub}</p>
+          <FadeIn delay={180}>
+            <p
+              style={{
+                fontFamily: "var(--font-title)",
+                fontSize: "clamp(1.1rem, 2.2vw, 1.45rem)",
+                fontWeight: 400,
+                color: "var(--color-gold)",
+                letterSpacing: "0.02em",
+                marginBottom: "1.4rem",
+                fontStyle: "italic",
+              }}
+            >
+              {copy.hero.tagline}
+            </p>
           </FadeIn>
 
-          <FadeIn delay={350}>
+          <FadeIn delay={260}>
+            <p className="hero-sub mx-auto mb-4">{copy.hero.sub}</p>
+          </FadeIn>
+
+          <FadeIn delay={340}>
+            <p
+              style={{
+                fontFamily: "var(--font-mono)",
+                fontSize: "0.78rem",
+                textTransform: "uppercase",
+                letterSpacing: "0.14em",
+                color: "var(--color-text-dim)",
+                marginBottom: "2.2rem",
+              }}
+            >
+              {copy.hero.closing}
+            </p>
+          </FadeIn>
+
+          <FadeIn delay={440}>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Link href={copy.hero.ctaPrimary.href} className="btn-primary">
                 {copy.hero.ctaPrimary.label} <span style={{ marginLeft: 4 }}>{"\u2192"}</span>
