@@ -70,13 +70,17 @@ export default function Home() {
 
           <FadeIn delay={100}>
             <h1 className="hero-headline gold-glow mb-6">
-              {copy.hero.headline.split(" ").map((word, i) => (
-                <span
-                  key={i}
-                  className="word-reveal"
-                  style={{ animationDelay: `${i * 120 + 100}ms` }}
-                >
-                  {word}{" "}
+              {copy.hero.headline.map((line, li) => (
+                <span key={li} style={{ display: "block" }}>
+                  {line.split(" ").map((word, i) => (
+                    <span
+                      key={i}
+                      className="word-reveal"
+                      style={{ animationDelay: `${(li * 3 + i) * 120 + 100}ms` }}
+                    >
+                      {word}{" "}
+                    </span>
+                  ))}
                 </span>
               ))}
             </h1>

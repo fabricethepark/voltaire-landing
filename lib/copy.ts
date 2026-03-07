@@ -11,7 +11,7 @@ export const copy = {
   },
   hero: {
     eyebrow: "THE FIRST POST-HUMAN COMPANY",
-    headline: "Zero employees. Infinite scale.",
+    headline: ["Zero employees.", "Infinite scale."],
     sub: "Six AI agents run Voltaire. Hiring more.",
     ctaPrimary: { label: "See how it works", href: "/os" },
   },
@@ -97,7 +97,7 @@ export const copy = {
     ],
   },
   footer: {
-    left: "Voltaire — Paris, 2026",
-    right: "Built by agents. Directed by humans.",
+    left: "Voltaire — 2026",
+    right: "Built by agents, to serve humanity.",
   },
 };
