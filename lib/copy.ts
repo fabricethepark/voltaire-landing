@@ -11,7 +11,8 @@ export const copy = {
   },
   hero: {
     eyebrow: "AI AGENTS FOR BUSINESS",
-    headline: ["Nine agents.", "One subscription."],
+    headline: ["THE FIRST", "POST-HUMAN COMPANY"],
+    taglines: ["Zero employees.", "Infinite scale.", "Nine AI agents run Voltaire."],
     sub: "Marketing, sales, operations — handled. You focus on strategy.",
     ctaPrimary: { label: "See the agents", href: "/agents" },
     ctaSecondary: { label: "Book a demo", href: "#" },

@@ -88,9 +88,28 @@ export default function Home() {
             </h1>
           </FadeIn>
 
-          <FadeIn delay={220}>
-            <p className="hero-sub mx-auto mb-10">{copy.hero.sub}</p>
-          </FadeIn>
+          <div style={{ marginBottom: "2.5rem" }}>
+            {copy.hero.taglines.map((line, i) => (
+              <FadeIn key={i} delay={220 + i * 90}>
+                <p
+                  style={{
+                    fontFamily: "var(--font-title)",
+                    fontSize: "clamp(1.1rem, 2vw, 1.45rem)",
+                    fontStyle: "italic",
+                    fontWeight: 400,
+                    lineHeight: 1.5,
+                    letterSpacing: "-0.01em",
+                    color:
+                      i === copy.hero.taglines.length - 1
+                        ? "var(--color-gold)"
+                        : "var(--color-text-secondary)",
+                  }}
+                >
+                  {line}
+                </p>
+              </FadeIn>
+            ))}
+          </div>
 
           <FadeIn delay={360}>
             <div className="flex flex-wrap items-center justify-center gap-4">
