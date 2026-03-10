@@ -18,13 +18,13 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Voltaire — AI-Native Venture Studio",
+  title: "Voltaire — AI Agents for Business",
   description:
-    "Six agents. One human. Voltaire is what a company looks like when AI handles operations.",
+    "Nine AI agents handle your marketing, sales, and operations. One subscription. You focus on strategy.",
   openGraph: {
-    title: "Voltaire — AI-Native Venture Studio",
+    title: "Voltaire — AI Agents for Business",
     description:
-      "Six agents. One human. The org chart is dead.",
+      "Nine AI agents handle your marketing, sales, and operations. One subscription.",
     siteName: "Voltaire",
   },
 };

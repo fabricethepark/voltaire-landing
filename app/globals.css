@@ -155,6 +155,9 @@ body::before {
 .stagger > .fade-up:nth-child(4).visible { animation-delay: 0.24s; }
 .stagger > .fade-up:nth-child(5).visible { animation-delay: 0.32s; }
 .stagger > .fade-up:nth-child(6).visible { animation-delay: 0.40s; }
+.stagger > .fade-up:nth-child(7).visible { animation-delay: 0.48s; }
+.stagger > .fade-up:nth-child(8).visible { animation-delay: 0.56s; }
+.stagger > .fade-up:nth-child(9).visible { animation-delay: 0.64s; }
 
 /* ═══════════════════════════════════════════════
    TYPOGRAPHY

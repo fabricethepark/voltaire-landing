@@ -97,6 +97,11 @@ export default function Home() {
               <Link href={copy.hero.ctaPrimary.href} className="btn-primary">
                 {copy.hero.ctaPrimary.label} <span style={{ marginLeft: 4 }}>{"\u2192"}</span>
               </Link>
+              {copy.hero.ctaSecondary && (
+                <Link href={copy.hero.ctaSecondary.href} className="btn-ghost">
+                  {copy.hero.ctaSecondary.label}
+                </Link>
+              )}
             </div>
           </FadeIn>
         </div>
@@ -231,9 +236,9 @@ export default function Home() {
                 letterSpacing: "-0.01em",
               }}
             >
-              {"\u201C"}The twentieth century organized labor into hierarchies. The twenty-first
-              organizes intelligence into networks. We built Voltaire to see what happens
-              when you let the network run.{"\u201D"}
+              {"\u201C"}Nine agents. One subscription. Marketing, sales, operations — your
+              business runs while you focus on what matters. That is the promise of
+              Voltaire.{"\u201D"}
             </blockquote>
           </FadeIn>
           <FadeIn delay={150}>

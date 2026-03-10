@@ -100,7 +100,7 @@ export default function Nav() {
           <div className="flex items-center gap-4">
             {/* Desktop CTA */}
             <Link
-              href="/os"
+              href="/agents"
               className="btn-ghost hidden md:inline-flex"
               style={{ fontSize: "0.75rem" }}
             >
@@ -198,7 +198,7 @@ export default function Nav() {
             transition: `opacity 0.4s ease ${copy.nav.links.length * 60 + 120}ms, transform 0.4s ease ${copy.nav.links.length * 60 + 120}ms`,
           }}
         >
-          <Link href="/os" className="btn-primary" style={{ display: "inline-block" }}>
+          <Link href="/agents" className="btn-primary" style={{ display: "inline-block" }}>
             {copy.nav.cta} →
           </Link>
         </div>

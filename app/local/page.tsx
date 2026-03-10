@@ -8,7 +8,7 @@ import StripeFeeCalculator from "@/components/StripeFeeCalculator";
 import SiteScoutGrader from "@/components/SiteScoutGrader";
 
 const steps = [
-  { number: "01", title: "We find you", description: "Our SCOUT agent scans Google Maps and directories for businesses with weak or missing web presence." },
+  { number: "01", title: "We find you", description: "Our agent scans Google Maps and directories for businesses with weak or missing web presence." },
   { number: "02", title: "We grade you", description: "An AI audit scores your site A through D. Instant results. No sales call required." },
   { number: "03", title: "We build it", description: "A new site in 48 hours. Mobile-first. SEO-ready. You preview it before you pay." },
   { number: "04", title: "You decide", description: "No pressure. No contract. If the site works for you, we launch it. If not, you keep the audit." },
