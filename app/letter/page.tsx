@@ -91,7 +91,7 @@ export default function LetterPage() {
                         fontSize: "0.65rem",
                         textTransform: "uppercase",
                         letterSpacing: "0.12em",
-                        color: "var(--color-gold)",
+                        color: "var(--color-accent)",
                         marginBottom: 4,
                       }}
                     >

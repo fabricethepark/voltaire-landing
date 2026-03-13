@@ -136,7 +136,7 @@ export default function DashboardPage() {
                           fontFamily: "var(--font-mono)",
                           fontSize: "0.8rem",
                           letterSpacing: "0.1em",
-                          color: "var(--color-gold)",
+                          color: "var(--color-accent)",
                           padding: "14px 20px",
                         }}
                       >

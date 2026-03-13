@@ -28,7 +28,7 @@ export default function PageHero({
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse at center, rgba(197,164,78,0.04) 0%, transparent 70%)",
+            "radial-gradient(ellipse at center, rgba(212,56,44,0.04) 0%, transparent 70%)",
         }}
       />
 
@@ -40,7 +40,7 @@ export default function PageHero({
         )}
 
         <FadeIn delay={100}>
-          <h1 className="hero-headline gold-glow mb-8">{headline}</h1>
+          <h1 className="hero-headline accent-glow mb-8">{headline}</h1>
         </FadeIn>
 
         {subheadline && (

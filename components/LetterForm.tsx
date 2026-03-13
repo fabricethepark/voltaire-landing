@@ -23,7 +23,7 @@ export default function LetterForm() {
           transition: "border-color 0.2s ease",
         }}
         onFocus={(e) =>
-          (e.currentTarget.style.borderColor = "var(--color-gold)")
+          (e.currentTarget.style.borderColor = "var(--color-accent)")
         }
         onBlur={(e) =>
           (e.currentTarget.style.borderColor = "var(--color-border)")

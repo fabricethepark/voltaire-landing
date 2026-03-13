@@ -47,7 +47,7 @@ export default function AgentActivityFeed() {
           </span>{" "}
           <span
             style={{
-              color: "var(--color-gold)",
+              color: "var(--color-accent)",
               fontWeight: 600,
             }}
           >

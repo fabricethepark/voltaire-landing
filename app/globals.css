@@ -2,32 +2,33 @@
 
 /* ═══════════════════════════════════════════════
    VOLTAIRE DESIGN SYSTEM
-   Dark, editorial, minimal. Gold on black.
+   Light, editorial, minimal. Red accent on warm cream.
    ═══════════════════════════════════════════════ */
 
 @theme inline {
   /* ── Core Palette ── */
-  --color-bg: #060606;
-  --color-surface: #0E0E0E;
-  --color-surface-hover: #161616;
-  --color-surface-elevated: #1A1A1A;
-  --color-border: #1E1E1E;
-  --color-border-subtle: #141414;
+  --color-bg: #FAF8F5;
+  --color-surface: #FFFFFF;
+  --color-surface-hover: #F5F2EE;
+  --color-surface-elevated: #FFFFFF;
+  --color-surface-dark: #1A1A1A;
+  --color-border: #E8E4DF;
+  --color-border-subtle: #F0ECE7;
 
   /* ── Accent ── */
-  --color-gold: #C5A44E;
-  --color-gold-dim: rgba(197,164,78,0.12);
-  --color-gold-glow: rgba(197,164,78,0.06);
+  --color-accent: #D4382C;
+  --color-accent-dim: rgba(212,56,44,0.08);
+  --color-accent-glow: rgba(212,56,44,0.04);
 
   /* ── Text ── */
-  --color-text-primary: #F0EDE6;
-  --color-text-secondary: #8A8680;
-  --color-text-dim: #504E49;
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #6B6560;
+  --color-text-dim: #A8A29E;
 
   /* ── Semantic ── */
-  --color-success: #3ECF71;
-  --color-danger: #E5484D;
-  --color-warning: #F5A623;
+  --color-success: #16A34A;
+  --color-danger: #DC2626;
+  --color-warning: #F59E0B;
 
   /* ── Typography ── */
   --font-title: var(--font-cormorant), 'Georgia', serif;
@@ -41,8 +42,8 @@
 
   /* ── Radii ── */
   --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 16px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
 }
 
 /* ═══════════════════════════════════════════════
@@ -65,18 +66,18 @@ body {
 }
 
 ::selection {
-  background: rgba(197,164,78,0.25);
+  background: rgba(212,56,44,0.15);
   color: var(--color-text-primary);
 }
 
-/* ── Noise Grain Overlay ── */
+/* ── Noise Grain Overlay (subtle on light bg) ── */
 body::before {
   content: '';
   position: fixed;
   inset: 0;
   z-index: 9999;
   pointer-events: none;
-  opacity: 0.03;
+  opacity: 0.015;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 512px 512px;
@@ -189,7 +190,7 @@ body::before {
   font-size: 0.65rem;
   text-transform: uppercase;
   letter-spacing: 0.25em;
-  color: var(--color-gold);
+  color: var(--color-accent);
 }
 
 /* ═══════════════════════════════════════════════
@@ -221,8 +222,8 @@ body::before {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--color-gold);
-  color: var(--color-bg);
+  background: var(--color-accent);
+  color: #FFFFFF;
   border: none;
   border-radius: var(--radius-sm);
   padding: 12px 28px;
@@ -238,7 +239,7 @@ body::before {
 .btn-primary:hover {
   opacity: 0.9;
   transform: translateY(-1px);
-  box-shadow: 0 6px 24px rgba(197,164,78,0.2);
+  box-shadow: 0 6px 24px rgba(212,56,44,0.2);
 }
 
 .btn-ghost {
@@ -259,9 +260,9 @@ body::before {
 }
 
 .btn-ghost:hover {
-  border-color: var(--color-gold);
-  color: var(--color-gold);
-  background: var(--color-gold-glow);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: var(--color-accent-glow);
 }
 
 /* ═══════════════════════════════════════════════
@@ -277,13 +278,13 @@ body::before {
 }
 
 .card:hover {
-  border-color: rgba(197,164,78,0.3);
+  border-color: rgba(212,56,44,0.2);
   transform: translateY(-2px);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(197,164,78,0.08);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.06), 0 0 0 1px rgba(212,56,44,0.06);
 }
 
 .agent-card:hover {
-  box-shadow: 0 12px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(197,164,78,0.08), inset 3px 0 0 var(--agent-color, var(--color-gold));
+  box-shadow: 0 12px 40px rgba(0,0,0,0.06), 0 0 0 1px rgba(212,56,44,0.06), inset 3px 0 0 var(--agent-color, var(--color-accent));
 }
 
 /* ═══════════════════════════════════════════════
@@ -294,7 +295,7 @@ body::before {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: var(--color-gold);
+  color: var(--color-accent);
   font-size: 0.85rem;
   text-decoration: none;
   transition: gap 0.25s cubic-bezier(0.22, 1, 0.36, 1);
@@ -308,8 +309,9 @@ body::before {
    EFFECTS
    ═══════════════════════════════════════════════ */
 
-.gold-glow {
-  text-shadow: 0 0 120px rgba(197,164,78,0.1);
+
+.accent-glow {
+  text-shadow: 0 0 120px rgba(212,56,44,0.08);
 }
 
 .pulse-dot {
@@ -318,7 +320,7 @@ body::before {
   border-radius: 50%;
   background: var(--color-success);
   animation: pulse 2s ease-in-out infinite;
-  box-shadow: 0 0 8px rgba(62,207,113,0.4);
+  box-shadow: 0 0 8px rgba(22,163,74,0.4);
 }
 
 .skeleton {
@@ -336,7 +338,7 @@ body::before {
   font-family: var(--font-mono);
   font-size: 0.78rem;
   line-height: 2;
-  color: var(--color-text-dim);
+  color: var(--color-text-secondary);
 }
 
 .terminal-feed .success {
@@ -355,7 +357,7 @@ body::before {
   display: inline-block;
   width: 7px;
   height: 14px;
-  background: var(--color-gold);
+  background: var(--color-accent);
   animation: blink 1s step-end infinite;
   vertical-align: middle;
   margin-left: 4px;

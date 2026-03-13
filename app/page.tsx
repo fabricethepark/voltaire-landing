@@ -59,7 +59,7 @@ export default function Home() {
             width: "min(900px, 90vw)",
             height: "700px",
             background:
-              "radial-gradient(ellipse at center, rgba(197,164,78,0.07) 0%, transparent 65%)",
+              "radial-gradient(ellipse at center, rgba(212,56,44,0.04) 0%, transparent 65%)",
           }}
         />
 
@@ -69,7 +69,7 @@ export default function Home() {
           </FadeIn>
 
           <FadeIn delay={100}>
-            <h1 className="hero-headline gold-glow mb-6">
+            <h1 className="hero-headline accent-glow mb-6">
               {copy.hero.headline.map((line, li) => (
                 <span key={li} style={{ display: "block" }}>
                   {line.split(" ").map((word, i) => (
@@ -101,7 +101,7 @@ export default function Home() {
                     letterSpacing: "-0.01em",
                     color:
                       i === copy.hero.taglines.length - 1
-                        ? "var(--color-gold)"
+                        ? "var(--color-accent)"
                         : "var(--color-text-secondary)",
                   }}
                 >
@@ -178,7 +178,7 @@ export default function Home() {
               return (
                 <FadeIn key={product.name}>
                   <Link href={product.href} className="card block group" style={{ textDecoration: "none" }}>
-                    <div style={{ color: "var(--color-gold)", marginBottom: 20 }}>
+                    <div style={{ color: "var(--color-accent)", marginBottom: 20 }}>
                       {Icon && <Icon />}
                     </div>
                     <h3

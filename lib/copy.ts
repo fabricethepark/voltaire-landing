@@ -18,7 +18,7 @@ export const copy = {
     ctaSecondary: { label: "Book a demo", href: "#" },
   },
   stats: {
-    mrr: 4280,
+    mrr: 18560,
     agentCount: 9,
     clientCount: 12,
     weeklyActions: 847,

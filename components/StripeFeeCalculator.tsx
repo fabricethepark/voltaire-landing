@@ -53,7 +53,7 @@ export default function StripeFeeCalculator() {
           onChange={(e) => setVolume(Number(e.target.value))}
           style={{
             width: "100%",
-            accentColor: "var(--color-gold)",
+            accentColor: "var(--color-accent)",
             cursor: "pointer",
           }}
         />

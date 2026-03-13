@@ -89,7 +89,7 @@ export default function SiteScoutGrader() {
       {/* Loading state */}
       {loading && (
         <div style={{ fontFamily: "var(--font-mono)", fontSize: "0.78rem" }}>
-          <p style={{ color: "var(--color-gold)", marginBottom: 8 }}>
+          <p style={{ color: "var(--color-accent)", marginBottom: 8 }}>
             <span className="terminal-cursor" style={{ marginRight: 8 }}>
               {"\u2588"}
             </span>

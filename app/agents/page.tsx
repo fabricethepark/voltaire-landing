@@ -19,14 +19,14 @@ const agentColors: Record<string, string> = {
 
 /* ── Agent Badges ── */
 const agentBadges: Record<string, { label: string; color: string }> = {
-  COUNSEL: { label: "Hub Agent", color: "var(--color-gold)" },
+  COUNSEL: { label: "Hub Agent", color: "var(--color-accent)" },
   RECRUIT: { label: "Coming Soon", color: "var(--color-text-dim)" },
   VOICE: { label: "\u20AC0.15/min", color: "var(--color-success)" },
 };
 
 /* ── Agent icon (inline SVG, reused per card) ── */
 function AgentIcon({ name }: { name: string }) {
-  const fill = agentColors[name] ?? "var(--color-gold)";
+  const fill = agentColors[name] ?? "var(--color-accent)";
   return (
     <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
       <circle cx="16" cy="16" r="14" stroke={fill} strokeWidth="1" opacity="0.4" />
@@ -177,7 +177,7 @@ export default function AgentsPage() {
                       fontFamily: "var(--font-mono)",
                       fontSize: "0.65rem",
                       letterSpacing: "0.2em",
-                      color: "var(--color-gold)",
+                      color: "var(--color-accent)",
                       marginBottom: 16,
                     }}
                   >
@@ -232,7 +232,7 @@ export default function AgentsPage() {
                     display: "flex",
                     flexDirection: "column",
                     border: tier.highlighted
-                      ? "1px solid var(--color-gold)"
+                      ? "1px solid var(--color-accent)"
                       : undefined,
                   }}
                 >
@@ -243,7 +243,7 @@ export default function AgentsPage() {
                         fontSize: "0.6rem",
                         textTransform: "uppercase",
                         letterSpacing: "0.15em",
-                        color: "var(--color-gold)",
+                        color: "var(--color-accent)",
                         marginBottom: 12,
                       }}
                     >
@@ -318,7 +318,7 @@ export default function AgentsPage() {
                           style={{
                             position: "absolute",
                             left: 0,
-                            color: "var(--color-gold)",
+                            color: "var(--color-accent)",
                           }}
                         >
                           {"\u2713"}

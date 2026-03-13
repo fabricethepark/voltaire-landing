@@ -5,13 +5,13 @@ import PageHero from "@/components/PageHero";
 import FadeIn from "@/components/FadeIn";
 
 const formatColors: Record<string, string> = {
-  PDF: "rgba(197,164,78,0.15)",
+  PDF: "rgba(212,56,44,0.15)",
   Template: "rgba(110,196,167,0.15)",
   "ClawMart Skill": "rgba(139,157,195,0.15)",
 };
 
 const formatTextColors: Record<string, string> = {
-  PDF: "var(--color-gold)",
+  PDF: "var(--color-accent)",
   Template: "#6EC4A7",
   "ClawMart Skill": "#8B9DC3",
 };
@@ -62,7 +62,7 @@ export default function StudioPage() {
                         letterSpacing: "0.12em",
                         padding: "3px 8px",
                         borderRadius: 4,
-                        background: formatColors[product.format] ?? "rgba(255,255,255,0.06)",
+                        background: formatColors[product.format] ?? "rgba(0,0,0,0.04)",
                         color: formatTextColors[product.format] ?? "var(--color-text-dim)",
                       }}
                     >

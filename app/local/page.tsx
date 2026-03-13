@@ -91,7 +91,7 @@ export default function LocalPage() {
                     style={{
                       fontFamily: "var(--font-mono)",
                       fontSize: "0.7rem",
-                      color: "var(--color-gold)",
+                      color: "var(--color-accent)",
                       letterSpacing: "0.15em",
                       marginBottom: 12,
                     }}
@@ -154,7 +154,7 @@ export default function LocalPage() {
                       style={{
                         fontFamily: "var(--font-mono)",
                         fontSize: "0.85rem",
-                        color: "var(--color-gold)",
+                        color: "var(--color-accent)",
                         whiteSpace: "nowrap",
                         marginLeft: 12,
                       }}

@@ -50,7 +50,7 @@ export default function LiveMRRCounter({ value }: LiveMRRCounterProps) {
           letterSpacing: "-0.02em",
         }}
       >
-        {"\u20AC"}{display.toLocaleString("fr-FR")}
+        {"$"}{display.toLocaleString("en-US")}
       </div>
       <div className="flex items-center justify-center gap-2 mt-2">
         <span className="pulse-dot" />

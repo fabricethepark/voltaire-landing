@@ -43,12 +43,12 @@ export default function Nav() {
       <nav
         className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
         style={{
-          background: scrolled || menuOpen ? "rgba(6,6,6,0.97)" : "transparent",
+          background: scrolled || menuOpen ? "rgba(250,248,245,0.95)" : "transparent",
           backdropFilter: scrolled || menuOpen ? "blur(16px) saturate(1.2)" : "none",
           WebkitBackdropFilter: scrolled || menuOpen ? "blur(16px) saturate(1.2)" : "none",
           borderBottom:
             scrolled || menuOpen
-              ? "1px solid rgba(30,30,30,0.8)"
+              ? "1px solid var(--color-border)"
               : "1px solid transparent",
         }}
       >
@@ -62,7 +62,7 @@ export default function Nav() {
               fontFamily: "var(--font-title)",
               fontSize: "1.15rem",
               fontWeight: 500,
-              color: "var(--color-gold)",
+              color: "var(--color-text-primary)",
               letterSpacing: "0.12em",
               textDecoration: "none",
             }}
@@ -155,7 +155,7 @@ export default function Nav() {
       <div
         className="md:hidden fixed inset-0 z-40 flex flex-col"
         style={{
-          background: "rgba(6,6,6,0.98)",
+          background: "rgba(250,248,245,0.98)",
           backdropFilter: "blur(20px)",
           WebkitBackdropFilter: "blur(20px)",
           paddingTop: "80px",
