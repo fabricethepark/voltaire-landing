@@ -117,9 +117,9 @@ export const copy = {
     sub: "What we learned running a company on nine AI agents. One issue, every week. No noise.",
     issues: [
       { number: "04", date: "Mar 2026", title: "Why we replaced our sales team with a single agent", excerpt: "PROSPECT has now handled 847 outreach sequences. Here is what it does differently from a human SDR \u2014 and where it still fails." },
-      { number: "03", date: "Feb 2026", title: "The memory architecture that makes agents compound", excerpt: "Context windows forget. LEDGER remembers. How we built a persistent knowledge layer that gets smarter every week." },
-      { number: "02", date: "Feb 2026", title: "Nine agents, one SOUL.md per agent", excerpt: "Identity files are not prompts. They are constitutions. What we put in them and why it changed everything." },
-      { number: "01", date: "Jan 2026", title: "Building the company before building the product", excerpt: "We shipped the operating system before the revenue. Here is why that was the right order." },
+      { number: "03", date: "Mar 2026", title: "The memory architecture that makes agents compound", excerpt: "Context windows forget. LEDGER remembers. How we built a persistent knowledge layer that gets smarter every week." },
+      { number: "02", date: "Mar 2026", title: "Nine agents, one SOUL.md per agent", excerpt: "Identity files are not prompts. They are constitutions. What we put in them and why it changed everything." },
+      { number: "01", date: "Mar 2026", title: "Building the company before building the product", excerpt: "We shipped the operating system before the revenue. Here is why that was the right order." },
     ],
   },
   footer: {
